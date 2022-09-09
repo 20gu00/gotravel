@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0338eb7f-aa61-48b4-8620-d42b5c6a9f35" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/service/travel/cmd/rpc/pb/travel.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/travel/model/genModel.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/pb/payment.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/doc/homestay/homestay.api" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/doc/homestay/homestay.api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/doc/order/order.api" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/doc/order/order.api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityAddLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityDelteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityDelteLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayActivityUpdateLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayAddLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessAddLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessDeleteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessDeleteLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayBusinessUpdateLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayDeleteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayDeleteLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestayUpdateLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentAddLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentDeleteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentDeleteLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/homestay/homestaycommentUpdateLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/types/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/sql/go-travel_travel.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sql/go-travel_travel.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +41,21 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/travel/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/payment/cmd/api/internal/config" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/service/travel/model" />
-      <recent name="$PROJECT_DIR$/service/travel/cmd/rpc" />
-      <recent name="$PROJECT_DIR$/service/travel/cmd/api" />
-      <recent name="$PROJECT_DIR$/service/admin" />
-      <recent name="$PROJECT_DIR$/service/admin/model" />
+      <recent name="$PROJECT_DIR$/service/payment/cmd/api/internal/config" />
+      <recent name="$PROJECT_DIR$/service/payment/cmd/api" />
+      <recent name="$PROJECT_DIR$/service/payment" />
+      <recent name="$PROJECT_DIR$/service/payment/cmd/rpc/internal/config" />
+      <recent name="$PROJECT_DIR$/service/payment/cmd/rpc/pb" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/service/admin/cmd" />
+      <recent name="$PROJECT_DIR$/service/payment/cmd" />
       <recent name="$PROJECT_DIR$/service" />
+      <recent name="$PROJECT_DIR$/service/admin/cmd" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
