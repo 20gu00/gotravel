@@ -42,6 +42,7 @@ CREATE TABLE `homestay_activity` (
   `data_id` bigint NOT NULL DEFAULT '0' COMMENT '业务表id（id跟随活动类型走）',
   `row_status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0:下架 1:上架',
   `version` bigint NOT NULL DEFAULT '0' COMMENT '版本号',
+  `activity_id` int(100) NOT NULL DEFAULT '0' COMMENT 'activity_id',
   PRIMARY KEY (`id`),
   KEY `idx_rowType` (`row_type`,`row_status`,`del_state`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='每一间民宿';

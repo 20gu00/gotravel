@@ -2,6 +2,8 @@ package homestay
 
 import (
 	"context"
+	"go-travel/service/travel/cmd/rpc/pb"
+	"go-travel/service/travel/cmd/rpc/travel"
 
 	"go-travel/service/admin/cmd/api/internal/svc"
 	"go-travel/service/admin/cmd/api/internal/types"
@@ -23,8 +25,23 @@ func NewHomestayBusinessListLogic(ctx context.Context, svcCtx *svc.ServiceContex
 	}
 }
 
-func (l *HomestayBusinessListLogic) HomestayBusinessList(req *types.ListHomestayBusinessReq) (resp *types.ListHomestayBusinessResp, err error) {
-	// todo: add your logic here and delete this line
+type HomestayBusinessListApiResp struct {
+	Total int64
+	List  []*pb.ListHomestayBusinessItemResp
+}
 
-	return
+func (l *HomestayBusinessListLogic) HomestayBusinessList(req *types.ListHomestayBusinessReq) (resp *HomestayBusinessListApiResp, err error) {
+	// todo: add your logic here and delete this line
+	res, err := l.svcCtx.TravelRpc.ListHomestayBussiness(l.ctx, &travel.ListHomestayBusinessReq{
+		//Info:     req.Info,
+		Page:     req.Page,
+		PageSize: req.PageSize,
+	})
+	if err != nil {
+		return nil, err
+	}
+	return &HomestayBusinessListApiResp{
+		Total: res.Total,
+		List:  res.List,
+	}, nil
 }

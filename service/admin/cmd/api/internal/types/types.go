@@ -61,6 +61,7 @@ type DeleteUserResp struct {
 }
 
 type AddHomestayReq struct {
+	Id                  int64  `json:"id,optional"`
 	CreateTime          string `json:"createtime,optional"`
 	UpdateTime          string `json:"updatetime,optional"`
 	DelTime             string `json:"deltime,optional"`
@@ -146,6 +147,7 @@ type UpdateHomestayResp struct {
 }
 
 type AddHomestayActivityReq struct {
+	Id         int64  `json:"id,optional"`
 	CreateTime string `json:"createtime,optional"`
 	UpdateTime string `json:"updatetime,optional"`
 	DeleteTime string `json:"deletetime,optional"`
@@ -207,6 +209,7 @@ type UpdateHomestayActivityResp struct {
 }
 
 type AddHomestayBusinessReq struct {
+	Id          int64   `json:"id,optional"`
 	CreateTime  string  `json:"createtime,optional"`
 	UpdateTime  string  `json:"updatetime,optional"`
 	DeleteTime  string  `json:"deletetime,optional"`
@@ -292,6 +295,7 @@ type ListHomestayBusinessResp struct {
 }
 
 type AddHomestaycommentReq struct {
+	Id         int64   `json:"id,optional"`
 	CreateTime string  `json:"createtime,optional"`
 	UpdateTime string  `json:"updatetime,optional"`
 	DeleteTime string  `json:"deletetime,optional"`
@@ -384,6 +388,7 @@ type ListPaymentResp struct {
 }
 
 type AddOrderReq struct {
+	Id                  int64  `json:"id,optional"`
 	CreateTime          string `json:"createtime,optional"`
 	UpdateTime          string `json:"updatetime,optional"`
 	DeleteTime          string `json:"deletetime,optional"`

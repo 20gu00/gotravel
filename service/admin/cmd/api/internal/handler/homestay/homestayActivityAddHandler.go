@@ -6,8 +6,6 @@ import (
 	"go-travel/service/admin/cmd/api/internal/logic/homestay"
 	"go-travel/service/admin/cmd/api/internal/svc"
 	"go-travel/service/admin/cmd/api/internal/types"
-
-	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 func HomestayActivityAddHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

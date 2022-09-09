@@ -10,7 +10,7 @@ info(
 type (
     //gotravel_travel homestay
     AddHomestayReq{
-        //Id int64 `json:"id,optional"`
+        Id int64 `json:"id,optional"`
         CreateTime string `json:"createtime,optional"`
         UpdateTime string `json:"updatetime,optional"`
         DelTime string `json:"deltime,optional"`
@@ -96,9 +96,9 @@ type (
         Pong int64 `json:"pong"`
     }
 
-        //looklook_travel homestay_activity
+        //gotravel_travel homestay_activity
     AddHomestayActivityReq{
-        //Id int64 `json:"id,optional"`
+        Id int64 `json:"id,optional"`
         CreateTime string `json:"createtime,optional"`
         UpdateTime string `json:"updatetime,optional"`
         DeleteTime string `json:"deletetime,optional"`
@@ -160,9 +160,9 @@ type (
         Pong int64 `json:"pong"`
     }
 
-        //looklook_travel homestay_business
+        //gotravel_travel homestay_business
     AddHomestayBusinessReq{
-        //Id int64 `json:"id,optional"`
+        Id int64 `json:"id,optional"`
         CreateTime string `json:"createtime,optional"`
         UpdateTime string `json:"updatetime,optional"`
         DeleteTime string `json:"deletetime,optional"`
@@ -249,9 +249,9 @@ type (
     }
 
 
-        //looklook_travel homestay_comment
+        //gotravel_travel homestay_comment
     AddHomestaycommentReq{
-        //Id int64 `json:"id,optional"`
+        Id int64 `json:"id,optional"`
         CreateTime string `json:"createtime,optional"`
         UpdateTime string `json:"updatetime,optional"`
         DeleteTime string `json:"deletetime,optional"`

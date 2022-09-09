@@ -10,7 +10,7 @@ info(
 
 type(
     AddOrderReq{
-        ///Id int64 `json:"id,optional"`
+        Id int64 `json:"id,optional"`
         CreateTime string `json:"createtime,optional"`
         UpdateTime string `json:"updatetime,optional"`
         DeleteTime string `json:"deletetime,optional"`
