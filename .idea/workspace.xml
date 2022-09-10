@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0338eb7f-aa61-48b4-8620-d42b5c6a9f35" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/pb/payment.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/etc/admin-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/etc/admin-api.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderAddLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderDeleteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderDeleteLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderUpdateLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/etc/payment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/etc/payment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentWxPayCallbackLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentWxPayCallbackLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentwxPayLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentwxPayLogic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/payment/cmd/rpc/etc/payment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/etc/payment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +50,16 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/payment/cmd/api/internal/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/payment/cmd/api/internal/svc" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/payment/cmd/api/internal/svc" />
       <recent name="$PROJECT_DIR$/service/payment/cmd/api/internal/config" />
       <recent name="$PROJECT_DIR$/service/payment/cmd/api" />
       <recent name="$PROJECT_DIR$/service/payment" />
       <recent name="$PROJECT_DIR$/service/payment/cmd/rpc/internal/config" />
-      <recent name="$PROJECT_DIR$/service/payment/cmd/rpc/pb" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/service/payment/cmd" />

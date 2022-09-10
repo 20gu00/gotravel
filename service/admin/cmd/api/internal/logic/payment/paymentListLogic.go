@@ -2,6 +2,9 @@ package payment
 
 import (
 	"context"
+	"errors"
+	"go-travel/service/payment/cmd/rpc/payment"
+	"go-travel/service/payment/cmd/rpc/pb"
 
 	"go-travel/service/admin/cmd/api/internal/svc"
 	"go-travel/service/admin/cmd/api/internal/types"
@@ -23,8 +26,25 @@ func NewPaymentListLogic(ctx context.Context, svcCtx *svc.ServiceContext) *Payme
 	}
 }
 
-func (l *PaymentListLogic) PaymentList(req *types.ListPaymentReq) (resp *types.ListPaymentResp, err error) {
-	// todo: add your logic here and delete this line
+type PaymentListApiResp struct {
+	Total int64
+	List  []*pb.ListPaymentItemResp
+}
 
-	return
+func (l *PaymentListLogic) PaymentList(req *types.ListPaymentReq) (resp *PaymentListApiResp, err error) {
+	// todo: add your logic here and delete this line
+	res, err := l.svcCtx.PaymentRpc.ListPayment(l.ctx, &payment.ListPaymentReq{
+		//Info:     req.Info,
+		Page:     req.Page,
+		PageSize: req.PageSize,
+	})
+
+	if err != nil {
+		logx.WithContext(l.ctx).Errorf("page: %s and pagesize:%s 查询用户异常:%s", req.Page, req.PageSize, err.Error())
+		return nil, errors.New("payment list error")
+	}
+	return &PaymentListApiResp{
+		Total: res.Total,
+		List:  res.List,
+	}, nil
 }

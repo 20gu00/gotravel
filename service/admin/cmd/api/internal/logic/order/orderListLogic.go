@@ -2,6 +2,8 @@ package order
 
 import (
 	"context"
+	"go-travel/service/order/cmd/rpc/order"
+	"go-travel/service/order/cmd/rpc/pb"
 
 	"go-travel/service/admin/cmd/api/internal/svc"
 	"go-travel/service/admin/cmd/api/internal/types"
@@ -23,8 +25,23 @@ func NewOrderListLogic(ctx context.Context, svcCtx *svc.ServiceContext) *OrderLi
 	}
 }
 
-func (l *OrderListLogic) OrderList(req *types.ListOrderReq) (resp *types.ListOrderResp, err error) {
-	// todo: add your logic here and delete this line
+type OrderListApiResp struct {
+	Total int64
+	List  []*pb.ListOrderItemResp
+}
 
-	return
+func (l *OrderListLogic) OrderList(req *types.ListOrderReq) (resp *OrderListApiResp, err error) {
+	// todo: add your logic here and delete this line
+	res, err := l.svcCtx.OrderRpc.ListOrder(l.ctx, &order.ListOrderReq{
+		//Info:     req.Info,
+		Page:     req.Page,
+		PageSize: req.PageSize,
+	})
+	if err != nil {
+		return nil, err
+	}
+	return &OrderListApiResp{
+		Total: res.Total,
+		List:  res.List,
+	}, nil
 }

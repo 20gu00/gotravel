@@ -13,17 +13,6 @@ Prometheus:
   Port: 4004
   Path: /metrics
 
-#链路追踪
-#Telemetry:
-#  Name: payment-api
-#  Endpoint: http://jaeger:14268/api/traces
-#  Sampler: 1.0
-#  Batcher: jaeger
-
-#Log:
-#  ServiceName: payment-api
-#  Level: error
-
 #小程序配置
 WxMiniConf:
   AppId: wx2add729fadddddd
