@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0338eb7f-aa61-48b4-8620-d42b5c6a9f35" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/etc/admin-api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/etc/admin-api.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/handler/homestay/homestayActivityAddHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderAddLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderAddLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderDeleteLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderDeleteLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderUpdateLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderUpdateLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/svc/serviceContext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/etc/payment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/etc/payment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentWxPayCallbackLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentWxPayCallbackLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentwxPayLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/internal/logic/thirdPayment/thirdPaymentwxPayLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/rpc/etc/payment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/etc/payment.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="0338eb7f-aa61-48b4-8620-d42b5c6a9f35" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
