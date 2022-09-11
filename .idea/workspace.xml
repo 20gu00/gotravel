@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0338eb7f-aa61-48b4-8620-d42b5c6a9f35" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/interceptor/rpcserver/loggerInterceptor.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/interceptor/rpcserver/loggerInterceptor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/result/httpResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/result/httpResult.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/result/jobResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/result/jobResult.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/uniqueid/sn.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/uniqueid/sn.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file" beforeDir="false" afterPath="$PROJECT_DIR$/file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/order/orderListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/api/internal/logic/payment/paymentListLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager.proto" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/cmd/rpc/pb/manager_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin/model/adminModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin/model/adminModel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/order/cmd/rpc/etc/order.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/cmd/rpc/etc/order.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/order/cmd/rpc/internal/logic/listOrderLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/order/cmd/rpc/internal/logic/listOrderLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/api/internal/handler/thirdPayment/thirdPaymentWxPayCallbackHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/api/internal/handler/thirdPayment/thirdPaymentWxPayCallbackHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/rpc/internal/logic/listPaymentLogic.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/internal/logic/listPaymentLogic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/payment/cmd/rpc/internal/svc/serviceContext.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/payment/cmd/rpc/internal/svc/serviceContext.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfile" beforeDir="false" afterPath="$PROJECT_DIR$/testfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
