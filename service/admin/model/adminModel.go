@@ -34,7 +34,7 @@ func NewAdminModel(conn sqlx.SqlConn) AdminModel {
 func (m *defaultAdminModel) FindOneById(ctx context.Context, id int64) (*Admin, error) {
 	var resp Admin
 	query := fmt.Sprintf("select %s from %s where `id` = ? limit 1", adminRows, m.table)
-	err := m.conn.QueryRowCtx(ctx, &resp, query)
+	err := m.conn.QueryRowCtx(ctx, &resp, query, id)
 	switch err {
 	case nil:
 		return &resp, nil

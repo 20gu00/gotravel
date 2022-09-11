@@ -37,7 +37,7 @@ func NewAdminClient(cc grpc.ClientConnInterface) AdminClient {
 
 func (c *adminClient) AdminLogin(ctx context.Context, in *LoginReq, opts ...grpc.CallOption) (*LoginResp, error) {
 	out := new(LoginResp)
-	err := c.cc.Invoke(ctx, "/pb.admin/AdminLogin", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/managerpb.admin/AdminLogin", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -46,7 +46,7 @@ func (c *adminClient) AdminLogin(ctx context.Context, in *LoginReq, opts ...grpc
 
 func (c *adminClient) AdminInfo(ctx context.Context, in *UserInfoReq, opts ...grpc.CallOption) (*UserInfoResp, error) {
 	out := new(UserInfoResp)
-	err := c.cc.Invoke(ctx, "/pb.admin/AdminInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/managerpb.admin/AdminInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -55,7 +55,7 @@ func (c *adminClient) AdminInfo(ctx context.Context, in *UserInfoReq, opts ...gr
 
 func (c *adminClient) ChangePwd(ctx context.Context, in *ChangePwdReq, opts ...grpc.CallOption) (*ChangePwdResp, error) {
 	out := new(ChangePwdResp)
-	err := c.cc.Invoke(ctx, "/pb.admin/ChangePwd", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/managerpb.admin/ChangePwd", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -108,7 +108,7 @@ func _Admin_AdminLogin_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pb.admin/AdminLogin",
+		FullMethod: "/managerpb.admin/AdminLogin",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(AdminServer).AdminLogin(ctx, req.(*LoginReq))
@@ -126,7 +126,7 @@ func _Admin_AdminInfo_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pb.admin/AdminInfo",
+		FullMethod: "/managerpb.admin/AdminInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(AdminServer).AdminInfo(ctx, req.(*UserInfoReq))
@@ -144,7 +144,7 @@ func _Admin_ChangePwd_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pb.admin/ChangePwd",
+		FullMethod: "/managerpb.admin/ChangePwd",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(AdminServer).ChangePwd(ctx, req.(*ChangePwdReq))
@@ -156,7 +156,7 @@ func _Admin_ChangePwd_Handler(srv interface{}, ctx context.Context, dec func(int
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var Admin_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "pb.admin",
+	ServiceName: "managerpb.admin",
 	HandlerType: (*AdminServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

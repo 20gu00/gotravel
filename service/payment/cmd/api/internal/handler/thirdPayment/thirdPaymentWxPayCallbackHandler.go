@@ -18,7 +18,7 @@ func ThirdPaymentWxPayCallbackHandler(svcCtx *svc.ServiceContext) http.HandlerFu
 		}
 
 		l := thirdPayment.NewThirdPaymentWxPayCallbackLogic(r.Context(), svcCtx)
-		resp, err := l.ThirdPaymentWxPayCallback(&req)
+		resp, err := l.ThirdPaymentWxPayCallback(r) //(&req)
 		if err != nil {
 			httpx.Error(w, err)
 		} else {

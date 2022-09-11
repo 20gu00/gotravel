@@ -40,6 +40,7 @@ func (l *OrderListLogic) OrderList(req *types.ListOrderReq) (resp *OrderListApiR
 	if err != nil {
 		return nil, err
 	}
+
 	return &OrderListApiResp{
 		Total: res.Total,
 		List:  res.List,

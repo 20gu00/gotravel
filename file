@@ -28,3 +28,11 @@ sql建议使用deploy下的
 
 
 ---
+docker pull wurstmeister/kafka
+docker pull wurstmeister/zookeeper
+docker run -it --name zookeeper -p 12181:2181 -d wurstmeister/zookeeper:latest
+docker run -it --name kafka01 -p 19092:9092 -d -e KAFKA_BROKER_ID=0 -e KAFKA_ZOOKEEPER_CONNECT=192.168.233.129:12181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.233.129:19092 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 wurstmeister/kafka:latest
+
+--net=host 2181 9092
+
+redis 4.0以上

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package pb;   //pb and usercent conflict
+package managerpb;   //pb and usercent conflict
 
 option go_package = "./pb";
 

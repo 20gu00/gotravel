@@ -2,7 +2,7 @@ package uniqueid
 
 import (
 	"fmt"
-	"looklook/common/tool"
+	"go-travel/common/tool"
 	"time"
 )
 

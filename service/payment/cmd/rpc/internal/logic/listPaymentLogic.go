@@ -3,6 +3,7 @@ package logic
 import (
 	"context"
 	"encoding/json"
+	"github.com/pkg/errors"
 	"go-travel/service/payment/cmd/rpc/payment"
 
 	"go-travel/service/payment/cmd/rpc/internal/svc"
@@ -31,15 +32,16 @@ func (l *ListPaymentLogic) ListPayment(in *pb.ListPaymentReq) (*pb.ListPaymentRe
 	countbuilder := l.svcCtx.ThirdPaymentModel.CountBuilder("id")
 	count, err := l.svcCtx.ThirdPaymentModel.FindCount(l.ctx, countbuilder)
 	if err != nil {
-		logx.WithContext(l.ctx).Errorf("查询payment信息失败,参数,异常:%s", err.Error())
-		return nil, err
+		logx.WithContext(l.ctx).Errorf("查询payment count信息失败,参数,异常:%s", err.Error())
+		return nil, errors.New("find payment count error(rpc)")
 	}
+
 	rowBuilder := l.svcCtx.ThirdPaymentModel.RowBuilder()
 	all, err := l.svcCtx.ThirdPaymentModel.FindPageListByPage(l.ctx, rowBuilder, in.Page, in.PageSize, "id")
 	if err != nil {
 		reqStr, _ := json.Marshal(in)
 		logx.WithContext(l.ctx).Errorf("分页查询所有payment table信息失败,参数:%s,异常:%s", reqStr, err.Error())
-		return nil, err
+		return nil, errors.New("list payment error(rpc)")
 	}
 
 	var outList []*payment.ListPaymentItemResp

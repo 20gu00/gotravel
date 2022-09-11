@@ -36,7 +36,6 @@ func (l *ListOrderLogic) ListOrder(in *pb.ListOrderReq) (*pb.ListOrderResp, erro
 		return nil, err
 	}
 	rowBuilder := l.svcCtx.HomestayOrderModel.RowBuilder()
-
 	all, err := l.svcCtx.HomestayOrderModel.FindPageListByPage(l.ctx, rowBuilder, in.Page, in.PageSize, "id") //Pageno Current
 	if err != nil {
 		reqStr, _ := json.Marshal(in)

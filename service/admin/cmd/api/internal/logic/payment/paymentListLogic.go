@@ -2,7 +2,6 @@ package payment
 
 import (
 	"context"
-	"errors"
 	"go-travel/service/payment/cmd/rpc/payment"
 	"go-travel/service/payment/cmd/rpc/pb"
 
@@ -40,8 +39,8 @@ func (l *PaymentListLogic) PaymentList(req *types.ListPaymentReq) (resp *Payment
 	})
 
 	if err != nil {
-		logx.WithContext(l.ctx).Errorf("page: %s and pagesize:%s 查询用户异常:%s", req.Page, req.PageSize, err.Error())
-		return nil, errors.New("payment list error")
+		//logx.WithContext(l.ctx).Errorf("page: %s and pagesize:%s 查询用户异常:%s", req.Page, req.PageSize, err.Error())
+		return nil, err //errors.New("payment list error")
 	}
 	return &PaymentListApiResp{
 		Total: res.Total,

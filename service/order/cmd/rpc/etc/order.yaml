@@ -1,7 +1,7 @@
 Name: order-rpc
 ListenOn: 0.0.0.0:2001
 Mode: dev
-x
+
 #监控
 Prometheus:
   Host: 0.0.0.0

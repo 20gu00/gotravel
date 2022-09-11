@@ -136,7 +136,7 @@
 }
 
 //--------------------homestay business list
-//http://127.0.0.1:5005/admin//homestaybusiness_update
+//http://127.0.0.1:5005/admin//homestaybusiness_list
 //get
 {
            "info":"%",
@@ -374,7 +374,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIyNTk3ODQsImlhdCI6MTY2MjE3MzM
 /*------------------------------------provide to travel app use-------------*/
 
 //----------------homestay order create
-//http://127.0.0.1:1001/order/v1//homestayOrder/createHomestayOrder
+//http://127.0.0.1:1001/order/v1/homestayOrder/createHomestayOrder
 //post
 {
         "homestayId":2,
@@ -386,7 +386,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIyNTk3ODQsImlhdCI6MTY2MjE3MzM
 }
 
 //----------------homestay order list
-//http://127.0.0.1:1001/order/v1//homestayOrder/userHomestayOrderList
+//http://127.0.0.1:1001/order/v1/homestayOrder/userHomestayOrderList
 //post
 {
         "lastId":1,
@@ -395,7 +395,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIyNTk3ODQsImlhdCI6MTY2MjE3MzM
 }
 
 //----------------homestay order detail
-//http://127.0.0.1:1001/order/v1//homestayOrder/userHomestayOrderDetail
+//http://127.0.0.1:1001/order/v1/homestayOrder/userHomestayOrderDetail
 //post
 {
     "sn":"HSO2022090515521418035922"
