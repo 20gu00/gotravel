@@ -23,7 +23,6 @@ looklook_usercenter travel order payment admin
 
 123456 passwd
 
-sql建议使用deploy下的
 
 
 
@@ -36,3 +35,6 @@ docker run -it --name kafka01 -p 19092:9092 -d -e KAFKA_BROKER_ID=0 -e KAFKA_ZOO
 --net=host 2181 9092
 
 redis 4.0以上
+
+payment-update-paystatus-topic
+

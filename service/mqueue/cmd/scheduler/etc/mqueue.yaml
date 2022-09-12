@@ -10,7 +10,7 @@ Prometheus:
   Path: /metrics
 
 Redis:
-  Host: 127.0.0.1:6379
+  Host: redis:6379
   Pass:
 #  Type: node
 #  Pass: G62m50oigInC30sf

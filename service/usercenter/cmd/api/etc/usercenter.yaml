@@ -15,9 +15,9 @@ WxMiniConf:
 
 #rpc
 UsercenterRpcConf:
-  Endpoints:
-    - 127.0.0.1:2004
-  #Target: k8s://gozero/usercenter-rpc-svc:2004
+#  Endpoints:
+#    - 127.0.0.1:2004
+  Target: k8s://gozero/usercenter-rpc-svc:2004
   NonBlock: true
 
 #监控

@@ -10,7 +10,7 @@ Prometheus:
   Path: /metrics
 
 Redis:
-  Host: 127.0.0.1:6379
+  Host: redis:6379
   Pass:
 #  Type: node
 #  Pass: G62m50oigInC30sf
@@ -22,13 +22,13 @@ WxMiniConf:
 
 #rpc service.
 OrderRpcConf:
-  Endpoints:
-    - 127.0.0.1:2001
-  #Target: k8s://gozero/order-rpc-svc:2001
+#  Endpoints:
+#    - 127.0.0.1:2001
+  Target: k8s://gozero/order-rpc-svc:2001
   NonBlock: true
 
 UsercenterRpcConf:
-  Endpoints:
-    - 127.0.0.1:2004
-  #Target: k8s://gozero/usercenter-rpc-svc:2004
+#  Endpoints:
+#    - 127.0.0.1:2004
+  Target: k8s://gozero/usercenter-rpc-svc:2004
   NonBlock: true
